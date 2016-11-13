@@ -1,0 +1,49 @@
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+.overlay{position:absolute; top: 0; left: 0; width: 100%; height:100vh; background-color: rgba(0,0,0,.2); z-index: 20;}
+h1{ color:white;
+    z-index: 25;
+margin: auto;
+position: absolute;
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+top: 75px; left: 0; bottom: 0; right: 0; font-size: 72px; text-align: center;}
+
+.button{color:white; padding: 15px 25px; border: 1px solid; position: relative; z-index: 100;
+bottom: 30vh; transition: all .5s; cursor: pointer;
+}
+.button:hover{background-color: #596869;}
+
+.stepWrapper{transition: all .5s; top: -105vh;}
+.stepWrapper.active{top: 0;}
+#step1{position:absolute; z-index: 199; width: 100%; height:100%;}
+.stepOverlay{position:absolute; z-index: 200; width: 100%; height: 100%;
+background-color: rgba(0,0,0,.8);}
+
+.stepBox{width: 400px; height: 300px; background-color: white; z-index: 201;  margin: auto;
+position: absolute; border-radius: 15px;
+top: 0; left: 0; bottom: 0; right: 0; overflow-x: hidden;}
+.stepBox h2{margin-top: 0px; padding: 10px 0; background-color: rgb(36, 158, 209); color:white;
+border-radius: 15px 15px 0 0;}
+.boxContent{float:left; width: 400px;}
+.boxSlide{width: 1200px; position: absolute; left: 0; top: 0; transition: all .5s;}
+.next{display:block; clear:both; margin-top: 10px;
+ padding: 10px 0; border: 1px solid rgb(36, 158, 209); width: 75px; margin: 0 auto; cursor: pointer;
+transition: all .3s;}
+.next:hover{background-color: rgb(36, 158, 209); color:white;}
+
+.itemList{list-style: none; clear:both;}
+.itemList li{float:left; display:block; clear:both;}
